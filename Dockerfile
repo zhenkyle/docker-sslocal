@@ -1,13 +1,13 @@
 # shadowsocks
 #
-# VERSION 0.0.3
+# VERSION 0.0.1
 
 FROM ubuntu:14.04.3
-MAINTAINER Dariel Dato-on <oddrationale@gmail.com>
+MAINTAINER Zhen Kyle <zhenkyle@gmail.com>
 
 RUN apt-get update && \
     apt-get install -y python-pip
 RUN pip install shadowsocks==2.8.2
 
 # Configure container to run as an executable
-ENTRYPOINT ["/usr/local/bin/ssserver"]
+ENTRYPOINT ["/usr/local/bin/sslocal"]
