@@ -12,11 +12,11 @@ This image uses ENTRYPOINT to run the containers as an executable.
 
 You can configure the service to run on a port of your choice. Just make sure the port number given to Docker is the same as the one given to shadowsocks. Also, it is  highly recommended that you store the shadowsocks password in an environment variable as shown above. This way the password will not show in plain text when you run `docker ps`.
 
-For more command line options, refer to the [shadowsocks documentation](https://github.com/shadowsocks/shadowsocks/tree/master)
+For more command line options, refer to the [shadowsocks](https://github.com/shadowsocks/shadowsocks/tree/master) documentation.
 
 Changelog
 -----------
-2.9.0	2016-11-23	shadowsocks python version 2.9.0, this version comes with `-a ONE_TIME_AUTH`.
-2.8.2.1	2016-11-22	shadowsocks python version 2.8.2 with salsa20, chacha20. Note that `chacha20` is now prefered cipher, because it's faster and safer, accroding to [this article](https://github.com/breakwa11/shadowsocks-rss/issues/38) in chinese.
-2.8.2	2015-9-21	shadowsocks python version 2.8.2 without salsa20, chacha20
+- `2.9.0`: shadowsocks-python 2.9.0. This version comes with `-a ONE_TIME_AUTH` (2016-11-24)
+- `2.8.2.1`: shadowsocks-python 2.8.2 with salsa20, chacha20. Note that `chacha20` is now prefered cipher, because it's safer and faster, accroding to [this comment](https://github.com/breakwa11/shadowsocks-rss/issues/38). (2016-11-23)
+- `2.8.2`: shadowsocks-python 2.8.2 without salsa20, chacha20 (2015-9-21)
 
